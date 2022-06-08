@@ -35,11 +35,11 @@
                     <a class="nav-link" href="/Grid2.html">Grid 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Grid3A.html">Grid 3a</a>
+                    <a class="nav-link" href="/Grid3.html">Grid 3</a>
                 </li>        
-                <li class="nav-item">
+<!--                 <li class="nav-item">
                     <a class="nav-link" href="/Grid3B.html">Grid 3b</a>
-                </li>            
+                </li>     -->        
                 <li class="nav-item">
                     <a class="nav-link" href="/Grid4.html">Grid 4</a>
                 </li>
@@ -64,11 +64,40 @@
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container">
-           <h1 class="mt-5">Template with dark fixed navbar and sticky footer</h1>
-           <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with padding-top: 60px; on the main > .container.</p>
-       </div>
+        <div class="container-fluid">
+            
+            <div class="row h-100 minheight gy-2 row-cols-1 row-cols-md-2">
+                <div class="col col-md-4 order-last">
+                    <div class="bg-dark h-100 text-light p-2">
+                        <h1>COLUMN ONE</h1>
+                        <p>Desktop view shows this bottom right<br>Mobile view shows this in stacked position 4<br>It is ordered last.</p>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="bg-secondary h-100 text-light p-2">
+                        <h1>COLUMN TWO</h1>
+                        <p>Desktop view shows this in bottom left<br>Mobile view shows this in stacked position 2.</p>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="bg-secondary h-100 text-light p-2">
+                        <h1>COLUMN THREE</h1>
+                        <p>Desktop view shows this in bottom center<br>Mobile view shows this in stacked position 3.</p>
+                    </div>
+                </div>
+                <div class="col col-md-12 order-first">
+                    <div class="bg-secondary h-100 text-light p-2">
+                        <h1>COLUMN MAIN</h1>
+                        <p>Desktop view shows this across the top<br>Mobile view shows this in stacked position 1<br>It is ordered first.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>container-fluid allows for taking 100% width of display regardless of viewport</p>
+            </div>
+        </div>
     </main>
+
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
         <div class="container-fluid text-center">
             <span class="text-white">Bootstrap Grid Templates</span>

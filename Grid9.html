@@ -35,11 +35,11 @@
                     <a class="nav-link" href="/Grid2.html">Grid 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Grid3A.html">Grid 3a</a>
+                    <a class="nav-link" href="/Grid3.html">Grid 3</a>
                 </li>        
-                <li class="nav-item">
+<!--                 <li class="nav-item">
                     <a class="nav-link" href="/Grid3B.html">Grid 3b</a>
-                </li>            
+                </li>   -->          
                 <li class="nav-item">
                     <a class="nav-link" href="/Grid4.html">Grid 4</a>
                 </li>
@@ -63,12 +63,48 @@
     </div>
 </nav>
 
-    <main class="flex-shrink-0">
-       <div class="container">
-           <h1 class="mt-5">Template with dark fixed navbar and sticky footer</h1>
-           <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with padding-top: 60px; on the main > .container.</p>
-       </div>
-    </main>
+<main class="flex-shrink-0">
+    <div class="container-fluid">
+        
+        <div class="row h-100 minheight gy-2 row-cols-1 row-cols-md-2">
+            <div class="col-12 col-md-12 order-first">
+                <div class="bg-secondary h-100 text-light p-2">
+                    <h1>COLUMN MAIN</h1>
+                    <p>Order = <em>First</em><br><b>Desktop:</b><br>across the top<br><b>Mobile:</b><br>across the top</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="bg-secondary h-100 text-light p-2">
+                    <h1>COLUMN ONE</h1>
+                    <p>Order = <em>null</em><br><b>Desktop:</b><br>Bottom<br>Position 1<br><b>Mobile:</b><br>Center Left</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 order-last">
+                <div class="bg-dark h-100 text-light p-2">
+                    <h1>COLUMN TWO</h1>
+                    <p>Order = <em>Last</em><br><b>Desktop:</b><br>Bottom<br>Position 4<br><b>Mobile:</b><br>Bottom Right</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="bg-secondary h-100 text-light p-2">
+                    <h1>COLUMN THREE</h1>
+                    <p>Order = <em>null</em><br><b>Desktop:</b><br>Bottom<br>Position 2<br><b>Mobile:</b><br>Center Right</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="bg-secondary h-100 text-light p-2">
+                    <h1>COLUMN FOUR</h1>
+                    <p>Order = <em>null</em><br><b>Desktop:</b><br>Bottom<br>Position 3<br><b>Mobile:</b><br>Bottom Left</p>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <p>container-fluid allows for taking 100% width of display regardless of viewport</p>
+        </div>
+    </div>
+</main>
+
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
         <div class="container-fluid text-center">
             <span class="text-white">Bootstrap Grid Templates</span>
